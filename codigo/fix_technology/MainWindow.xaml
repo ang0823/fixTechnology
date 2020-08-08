@@ -6,9 +6,5 @@
         xmlns:local="clr-namespace:fix_technology"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Label x:Name="Answer" HorizontalAlignment="Left" Margin="104,42,0,0" VerticalAlignment="Top" Height="106" Width="567" FontSize="20" FontFamily="Century Gothic"/>
-        <Label x:Name="Answer2" HorizontalAlignment="Left" Margin="104,229,0,0" VerticalAlignment="Top" Height="106" Width="567" FontSize="20" FontFamily="Century Gothic"/>
-
-    </Grid>
+    <Grid/>
 </Window>

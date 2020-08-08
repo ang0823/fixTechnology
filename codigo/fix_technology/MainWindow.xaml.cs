@@ -25,31 +25,6 @@ namespace fix_technology
         public MainWindow()
         {
             InitializeComponent();
-            abrirConexion();
-        }
-
-        private void abrirConexion()
-        {
-            bool dbCconectada = conexion.abrir();
-            if (dbCconectada)
-            {
-                Answer.Content = "Se conecto a la base de datos\n\n";
-            }
-            else
-            {
-                Answer.Content = "No se conecto a la base de datos. Ver resultado en consola.\n\n";
-            }
-
-            bool dbCerrada = conexion.cerrar();
-
-            if (dbCerrada)
-            {
-                Answer2.Content = "Se desconecto la base de datos\n\n";
-            }
-            else
-            {
-                Answer.Content = "No se desconecto la base de datos. Ver resultado en consola.\n\n";
-            }
         }
     }
 }
