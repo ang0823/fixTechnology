@@ -64,6 +64,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="dao\ConexionDb.cs" />
+    <Compile Include="dao\interfaces\ContratoDao.cs" />
     <Compile Include="dao\interfaces\EquipoDao.cs" />
     <Compile Include="dao\interfaces\TecnicoDao.cs" />
     <Compile Include="MainWindow.xaml.cs">
