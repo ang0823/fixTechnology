@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace fix_technology.dao.dao.interfaces
+namespace fix_technology.dao.interfaces
 {
     interface TecnicoDao
     {
