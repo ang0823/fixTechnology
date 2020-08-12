@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="37f8ad2bb9584c20b57b8cb0076ecbc2" Name="Diagram1">
+        <EntityTypeShape EntityType="ftEntities.Cliente" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ftEntities.Direccion" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ftEntities.Equipo" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ftEntities.Estado" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ftEntities.Servicio" Width="1.5" PointX="7.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ftEntities.Tecnico" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <AssociationConnector Association="ftEntities.FK_Cliente_Direccion" ManuallyRouted="false" />
+        <AssociationConnector Association="ftEntities.FK_Equipo_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="ftEntities.FK_Equipo_Estado" ManuallyRouted="false" />
+        <AssociationConnector Association="ftEntities.FK_Servicio_Equipo" ManuallyRouted="false" />
+        <AssociationConnector Association="ftEntities.FK_Servicio_Tecnico" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
