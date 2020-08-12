@@ -47,6 +47,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -74,6 +76,39 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="dao\ConexionDb.cs" />
+    <Compile Include="dao\dao..ef\Cliente.cs">
+      <DependentUpon>FixTechnology_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dao\dao..ef\Direccion.cs">
+      <DependentUpon>FixTechnology_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dao\dao..ef\Equipo.cs">
+      <DependentUpon>FixTechnology_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dao\dao..ef\Estado.cs">
+      <DependentUpon>FixTechnology_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dao\dao..ef\FixTechnology_Model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FixTechnology_Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dao\dao..ef\FixTechnology_Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FixTechnology_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dao\dao..ef\FixTechnology_Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FixTechnology_Model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="dao\dao..ef\Servicio.cs">
+      <DependentUpon>FixTechnology_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dao\dao..ef\Tecnico.cs">
+      <DependentUpon>FixTechnology_Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -97,6 +132,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EntityDeploy Include="dao\dao..ef\FixTechnology_Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FixTechnology_Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="dao\dao..ef\FixTechnology_Model.edmx.diagram">
+      <DependentUpon>FixTechnology_Model.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -106,7 +148,24 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="dao\dao..ef\FixTechnology_Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FixTechnology_Model.edmx</DependentUpon>
+      <LastGenOutput>FixTechnology_Model.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="dao\dao..ef\FixTechnology_Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FixTechnology_Model.edmx</DependentUpon>
+      <LastGenOutput>FixTechnology_Model.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dao\dao.interfaces\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

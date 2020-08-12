@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace fix_technology.dao.fx.ef
+namespace fix_technology.dao.dao.ef
 {
     using System;
     using System.Collections.Generic;

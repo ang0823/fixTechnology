@@ -7,28 +7,22 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace fix_technology.dao.fx.ef
+namespace fix_technology.dao.dao.ef
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Cliente
+    public partial class Estado
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Cliente()
+        public Estado()
         {
             this.Equipo = new HashSet<Equipo>();
         }
     
         public int id { get; set; }
         public string nombre { get; set; }
-        public string apellido_paterno { get; set; }
-        public string apellido_materno { get; set; }
-        public string telefono { get; set; }
-        public string email { get; set; }
-        public Nullable<int> id_direccion { get; set; }
     
-        public virtual Direccion Direccion { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Equipo> Equipo { get; set; }
     }

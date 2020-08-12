@@ -7,25 +7,26 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace fix_technology.dao.fx.ef
+namespace fix_technology.dao.dao.ef
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Tecnico
+    public partial class Direccion
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Tecnico()
+        public Direccion()
         {
-            this.Servicio = new HashSet<Servicio>();
+            this.Cliente = new HashSet<Cliente>();
         }
     
         public int id { get; set; }
-        public string nombre { get; set; }
-        public string apellido_paterno { get; set; }
-        public string apellido_materno { get; set; }
+        public string calle { get; set; }
+        public string numero { get; set; }
+        public string colonia { get; set; }
+        public string codigo_postal { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Servicio> Servicio { get; set; }
+        public virtual ICollection<Cliente> Cliente { get; set; }
     }
 }
