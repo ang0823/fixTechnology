@@ -109,6 +109,10 @@
     <Compile Include="dao\dao..ef\Tecnico.cs">
       <DependentUpon>FixTechnology_Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="dao\dao.interfaces\ICliente.cs" />
+    <Compile Include="dao\dao.interfaces\IEquipo.cs" />
+    <Compile Include="dao\dao.interfaces\IServicio.cs" />
+    <Compile Include="dao\dao.interfaces\ITecnico.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -163,9 +167,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="dao\dao.interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
